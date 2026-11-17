@@ -1,0 +1,8 @@
+﻿*.weights
+*.pt
+*.pth
+__pycache__/
+*.py[cod]
+venv/
+.env
+output.jpg
