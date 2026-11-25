@@ -20,3 +20,8 @@ Automatic image captioning, object detection, and keyword tag extractor using Hu
 
 pip install -r requirements.txt
 
+## Example Results
+
+| Input Image | Object Detection Result |
+| :---: | :---: |
+| ![Input](image/example_02.jpg) | ![Output](output_detected.jpg) |
