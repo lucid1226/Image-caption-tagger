@@ -27,6 +27,13 @@ Automatic image captioning, object detection, and hashtag extractor using Huggin
    pip install -r requirements.txt
    ```
 
+## Usage
+
+Run the main script to generate captions, object detection results, and hashtags:
+
+```bash
+python main.py
+```
 
 ## Example Results
 
@@ -65,3 +72,10 @@ The results are pretty decent overall, though not always perfect because of a fe
 2. **Small or hidden objects:** If objects are too small or overlapping each other, the detector might miss them.
 
 3. **General hashtags:** Since CLIP picks from a fixed tag list, the hashtags are mostly broad topics (like `#travel` or `#sports`) rather than very specific words.
+
+
+## References
+
+* **Image Captioning (`BLIP`):** [Salesforce/blip-image-captioning-base](https://huggingface.co/Salesforce/blip-image-captioning-base)
+* **Object Detection (`Faster R-CNN`):** [PyTorch Torchvision Faster R-CNN Documentation](https://pytorch.org/vision/main/models/faster_rcnn.html)
+* **Hashtag Extraction (`CLIP`):** [openai/clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32)
