@@ -1,12 +1,11 @@
-import cv2
+from pathlib import Path
 import numpy as np
+from PIL import Image
 
-def preprocess_image(image_path, size=(224, 224)):
-    image = cv2.imread(image_path)
+def preprocess_image(image_path: str | Path, size: tuple[int, int] = (416, 416)) -> np.ndarray:
+    path = Path(image_path)
+    if not path.exists():
+        raise FileNotFoundError(str(image_path))
 
-    if image is None:
-       raise FileNotFoundError(image_path)
-
-    image = cv2.resize(image, size)
-
-    return image
+    img = Image.open(path).convert("RGB").resize(size)
+    return np.asarray(img, dtype=np.float32) / 255.0
