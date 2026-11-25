@@ -18,6 +18,7 @@ Automatic image captioning, object detection, and keyword tag extractor using Hu
 | :---: | :---: |
 | ![Input](image/example_02.jpg) | ![Result](image/example_02_result.jpg) |
 
+
 \## Installation
 
 ```bash
