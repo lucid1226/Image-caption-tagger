@@ -12,6 +12,11 @@ Automatic image captioning, object detection, and keyword tag extractor using Hu
 
 3\. \*\*Hashtag Extraction (`tagger.py`)\*\*: Recommends relevant hashtags via zero-shot classification using `openai/clip-vit-base-patch32`.
 
+## Example Results
+
+| Input Image | Object Detection Result |
+| :---: | :---: |
+| ![Input](image/example_02.jpg) | ![Output](output_detected.jpg) |
 
 
 \## Installation
@@ -20,8 +25,3 @@ Automatic image captioning, object detection, and keyword tag extractor using Hu
 
 pip install -r requirements.txt
 
-## Example Results
-
-| Input Image | Object Detection Result |
-| :---: | :---: |
-| ![Input](image/example_02.jpg) | ![Output](output_detected.jpg) |
