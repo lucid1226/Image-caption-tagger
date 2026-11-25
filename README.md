@@ -1,4 +1,4 @@
-### Image-caption-tagger
+# Image-caption-tagger
 
 Automatic image captioning, object detection, and hashtag extractor using Hugging Face (`BLIP`, `CLIP`) and PyTorch (`Faster R-CNN` / OpenCV).
 
