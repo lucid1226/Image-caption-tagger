@@ -1,0 +1,17 @@
+from pathlib import Path
+
+
+def load_classes(file_path):
+    path = Path(file_path)
+
+    if not path.is_file():
+        raise FileNotFoundError(file_path)
+
+    with path.open("r", encoding="utf-8") as file:
+        classes = [
+            line.strip()
+            for line in file
+            if line.strip()
+        ]
+
+    return classes
